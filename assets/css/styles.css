@@ -74,6 +74,7 @@ nav li a:after{
     bottom: -10px;
     transition: 0.3s;
 
+
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 250ms ease-in;
@@ -199,7 +200,7 @@ li a:hover{
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.5px) {
     /* nav ul{
         display: none;
     } */
@@ -214,5 +215,45 @@ li a:hover{
     }
     .heroimg{
         display: none;
+    }
+    nav{
+        padding: 30px 2% 30px 5%;
+    }
+    .hero{
+        padding: 30px 2% 20px 5%;
+    }
+    .herotext{
+        display: grid;
+        place-content: center;
+        margin-top: 60px;
+    }
+    .herotext h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileimg img{
+        margin-left: 0px;
+    }
+    .herocomp{
+        --min: 10ch;
+        --gap: 1rem;
+      
+        display: grid;
+        grid-gap: var(--gap);
+        /* min() with 100% prevents overflow
+        in extra narrow spaces */
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    }
+    .mobilebtn{
+        margin-top: 40px;
+    }
+    .mobilebtn button{
+        padding: 20px 40px;
     }
 }
