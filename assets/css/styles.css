@@ -26,12 +26,12 @@
     --image-3: clamp(34.56rem, calc(25.35rem + 46.04vw), 61.04rem);
     --image-4: clamp(41.47rem, calc(29.36rem + 60.56vw), 76.29rem);
     --image-5: clamp(49.77rem, calc(33.90rem + 79.31vw), 95.37rem);
-    --logo--2: clamp(2.47rem, calc(4.51rem + 12.88vw), 7.58rem);
+    --logo--2: clamp(2.47rem, calc(4.51rem + 12.88vw), 7.8rem);
     --logo--1: clamp(2.78rem, calc(-0.12rem + 14.49vw), 11.11rem);
 }
 
 :root {
-  --color: rgb(14, 14, 52);
+  --color: linear-gradient(to left top, #141452, #0c154b, #061443, #03143a, #041232);;
   --color-span: rgb(101, 101, 236);
   --font: rgb(175, 175, 175);
   --font-1: "Raleway", sans-serif;
