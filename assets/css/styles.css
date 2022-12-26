@@ -96,7 +96,7 @@ li a:hover{
 }
 
 .hero {
-  height: 100vh;
+  height: 100%;
   padding: 30px 2% 20px 10%;
 }
 
@@ -252,6 +252,8 @@ li a:hover{
     }
     .mobilebtn{
         margin-top: 40px;
+        display: flex;
+        justify-content: center;
     }
     .mobilebtn button{
         padding: 20px 40px;
