@@ -86,13 +86,8 @@ li a:hover{
     color: #cdcdcd;
 }
 
-.logo a{
-  font-size: var(--step-2);
-  font-family: sans;
-  color: var(--font);
-  letter-spacing: 1.5px;
-  font-weight: 500;
-  font-family: var(--font-2);
+.logo img{
+    max-width: 130px;
 }
 
 .hero {
@@ -221,6 +216,7 @@ li a:hover{
     }
     .hero{
         padding: 30px 2% 20px 5%;
+        height: 100vh;
     }
     .herotext{
         display: grid;
@@ -239,6 +235,7 @@ li a:hover{
     }
     .mobileimg img{
         margin-left: 0px;
+        margin-top: 20px;
     }
     .herocomp{
         --min: 10ch;
