@@ -119,6 +119,7 @@ li a:hover{
     font-size: var(--step-3);
     color: var(--font);
     margin-top: 120px;
+    display: inline-block;
 }
 
 .herotext h1 {
@@ -162,7 +163,6 @@ li a:hover{
 }
 .mobilebtn button{
     color: var(--font);
-    transition: 0.657s ease-in;
 }
 
 .heroimg img{
@@ -194,34 +194,22 @@ li a:hover{
 
 
 @media screen and (max-width: 414px) {
-  ul {
-    display: none;
-  }
-  .logo {
-    font-family: var(--font-2);
-    font-weight: 700;
-  }
-  .herotext {
-  }
-  .herotext h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 50px;
-    letter-spacing: 2px;
-    font-family: var(--font-1);
-  }
-  .heroimg img {
-    position: relative;
-    max-width: 410px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .mobilebtn {
-    display: flex;
-    gap: 1em;
-    padding: 0px 10px;
-    margin-top: 20px;
-  }
+    nav ul{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* nav ul{
+        display: none;
+    } */
+    .mobileimg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        display: none;
+    }
 }
