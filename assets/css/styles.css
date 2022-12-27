@@ -81,7 +81,7 @@ nav li a:after{
 
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 250ms ease-in;
+    transition: transform 350ms ease-in;
 }
 nav li a:hover::after{
     transform: scaleX(1);
@@ -101,8 +101,8 @@ li a:hover{
 }
 
 .hero {
-  height: 100vh;
-  padding: 30px 2% 20px 10%;
+  height: 100%;
+  padding: 30px 2% 30px 10%;
 }
 
 .herocomp{
@@ -162,6 +162,7 @@ li a:hover{
     background-color: rgb(60, 60, 184);
     border-radius: 10px;
     cursor: pointer;
+    font-family: var(--font-3);
 }
 .mobilebtn button:nth-child(2){
     background-color: transparent;
@@ -186,6 +187,37 @@ li a:hover{
 
 
 
+/* section 2 */
+.integrate{
+    height: 30vh;
+}
+
+.integrate h2{
+    text-align: center;
+    color: var(--font);
+    font-family: var(--font-3);
+    font-size: var(--step-3);
+    margin-top: 40px;
+}
+
+.carousel{ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  overflow: hidden;
+  gap: 1em;
+  font-family: var(--font-3);
+  font-weight: 600;
+  font-size: var(--step-2);
+  color: var(--font);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.carousel p{
+    transition: carousel 500ms linear infinite;
+}
 
 
 
@@ -193,8 +225,14 @@ li a:hover{
 
 
 
-
-
+@keyframes carousel{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 
 @keyframes hover {
     50%{
