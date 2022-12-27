@@ -437,6 +437,9 @@ li a:hover {
   .servicitems {
     display: flex;
   }
+  .servicmobile{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -520,5 +523,8 @@ li a:hover {
 
   .marq{
     margin-top: 130px;
+  }
+  .servicpc{
+    display: none;
   }
 }
