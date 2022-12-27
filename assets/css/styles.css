@@ -133,6 +133,7 @@ li a:hover{
   letter-spacing: 1px;
   font-family: var(--font-3);
   font-size: var(--step-4);
+  word-spacing: -5px;
 }
 
 .herotext span {
@@ -141,9 +142,12 @@ li a:hover{
 
 .herodesc{
     padding: 1.5rem clamp(0rem, 0%, 3rem);
+    width: min(100% - 5rem, var(--container-max, 60ch));
     font-size: var(--step--0);
     color: var(--font);
-    font-family: var(--font-2)
+    font-family: var(--font-2);
+    word-spacing: 5px;
+    line-height: 25px;
 }
 
 .mobilebtn {
@@ -224,10 +228,10 @@ li a:hover{
         display: none;
     }
     nav{
-        padding: 30px 2% 30px 5%;
+        padding: 30px 2% 20px 5%;
     }
     .hero{
-        padding: 30px 2% 20px 2%;
+        padding: 0px 2% 20px 2%;
         height: 100%;
     }
     .herotext{
@@ -240,6 +244,9 @@ li a:hover{
         justify-content: center;
         align-items: center;
         line-height: 50px;
+    }
+    .herodesc{
+        width: min(100% - 5rem, var(--container-max));
     }
     .mobileimg{
         display: flex;

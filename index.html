@@ -40,7 +40,7 @@
                 <div class="herocomp">
                     <div class="heroitems">
                         <div class="herotext">
-                            <h1>_&nbsp;<span>Unique</span>&nbsp;_</h1>
+                            <h1>_<span>Unique</span>&nbsp;_</h1>
                             <h1>Web Designs</h1>
                             <h1>For Your Business</h1>
                         </div>
@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="heroimg mobileimg">
-                            <img src="assets\img\people-building-metaverse.png" alt="people-building-metaverse">
+                            <img src="assets\img\people-building-metaverse.png" alt="people-building-metaverse" draggable="false">
                         </div>
                         
                         <div class="mobilebtn">
@@ -70,7 +70,13 @@
 
         </section>
 
+        <!-- inline javascript  -->
+        <script>
+            const img = document.querySelector('img')
+            img.setAttribute("draggable", false)
+        </script>
 
+        <!-- external javascript -->
         <script src="app.js" defer></script>
     </body>
 
