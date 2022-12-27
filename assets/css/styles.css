@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap");
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  border: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
 }
 
 :root {
@@ -21,7 +21,7 @@
     --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
     --image--2: clamp(13.89rem, calc(11.76rem + 10.63vw), 20.00rem);
     --image--1: clamp(16.67rem, calc(13.77rem + 14.49vw), 25.00rem);
-    --image-0: clamp(20.00rem, calc(16.09rem + 19.57vw), 31.25rem);
+    --image-0: clamp(20.00rem, calc(10.09rem + 19.57vw), 31.25rem);
     --image-1: clamp(24.00rem, calc(18.76rem + 26.20vw), 39.06rem);
     --image-2: clamp(28.80rem, calc(21.83rem + 34.83vw), 48.83rem);
     --image-3: clamp(34.56rem, calc(25.35rem + 46.04vw), 61.04rem);
@@ -32,44 +32,45 @@
 }
 
 :root {
-  --color: linear-gradient(to left top, #141452, #0c154b, #061443, #03143a, #041232);;
-  --color-span: rgb(101, 101, 236);
-  --font: rgb(175, 175, 175);
-  --font-1: "Raleway", sans-serif;
-  --font-2: "Averia Serif Libre", sans-serif;
-  --font-3: 'JetBrains Mono', monospace;
+    --color: linear-gradient(to left top, #141452, #0c154b, #061443, #03143a, #041232);
+    ;
+    --color-span: rgb(101, 101, 236);
+    --font: rgb(175, 175, 175);
+    --font-1: "Raleway", sans-serif;
+    --font-2: "Averia Serif Libre", sans-serif;
+    --font-3: 'JetBrains Mono', monospace;
 }
 
 #body {
-  background: var(--color);
-  -webkit-tap-highlight-color: transparent;
+    background: var(--color);
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav {
-  display: flex;
-  padding: 30px 7% 30px 10%;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  position: relative;
+    display: flex;
+    padding: 30px 7% 30px 10%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 ul {
-  display: flex;
-  font-size: var(--step--2);
-  font-weight: 550;
-  letter-spacing: 2px;
-  gap: 3em;
-  font-family: var(--font-3);
-  position: relative;
+    display: flex;
+    font-size: var(--step--2);
+    font-weight: 550;
+    letter-spacing: 2px;
+    gap: 3em;
+    font-family: var(--font-3);
+    position: relative;
 }
 
 ul a {
-  color: var(--font);
-  position: relative;
+    color: var(--font);
+    position: relative;
 }
 
-nav li a:after{
+nav li a:after {
     content: "";
     position: absolute;
     background-color: rgb(23, 23, 183);
@@ -84,29 +85,35 @@ nav li a:after{
     transform-origin: left;
     transition: transform 350ms ease-in;
 }
-nav li a:hover::after{
+
+nav li a:hover::after {
     transform: scaleX(1);
 }
-li a:hover{
+
+li a:hover {
     color: #cdcdcd;
 }
 
-.logo a{
+.logo a {
     font-family: var(--font-3);
     color: var(--font);
     font-size: var(--step-3);
 }
 
-.body{
+.logo a:hover {
+    color: #cdcdcd;
+}
+
+.body {
     height: 100%;
 }
 
 .hero {
-  height: 100%;
-  padding: 30px 2% 30px 10%;
+    height: 100%;
+    padding: 30px 2% 30px 10%;
 }
 
-.herocomp{
+.herocomp {
     display: flex;
 }
 
@@ -117,8 +124,8 @@ li a:hover{
     flex-wrap: wrap;
     gap: var(--gap);
 }
-  
-.herocomp > * {
+
+.herocomp>* {
     flex: 1 1 var(--min);
 }
 
@@ -129,19 +136,19 @@ li a:hover{
 }
 
 .herotext h1 {
-  display: flex;
-  line-height: 60px;
-  letter-spacing: 1px;
-  font-family: var(--font-3);
-  font-size: var(--step-5);
-  word-spacing: -5px;
+    display: flex;
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-family: var(--font-3);
+    font-size: var(--step-5);
+    word-spacing: -5px;
 }
 
 .herotext span {
     color: var(--color-span);
 }
 
-.herodesc{
+.herodesc {
     padding: 1.5rem clamp(0rem, 0%, 3rem);
     width: min(100% - 5rem, var(--container-max, 60ch));
     font-size: var(--step--0);
@@ -162,24 +169,27 @@ li a:hover{
     color: var(--font);
     background-color: rgb(60, 60, 184);
     border-radius: 10px;
-    cursor: pointer;
     font-family: var(--font-3);
 }
-.mobilebtn button:nth-child(2){
+
+.mobilebtn button:nth-child(2) {
     background-color: transparent;
 }
-.cntbtn{
+
+.cntbtn {
     margin-left: 5px;
 }
-.mobilebtn button:hover{
+
+.mobilebtn button:hover {
     color: rgb(227, 227, 227);
     transition: 0.2s ease-in;
 }
-.mobilebtn button{
+
+.mobilebtn button {
     color: var(--font);
 }
 
-.heroimg img{
+.heroimg img {
     position: relative;
     max-width: var(--image-0);
     margin-left: 10px;
@@ -224,13 +234,13 @@ li a:hover{
 
 /* section 3 */
 
-.services{
+.services {
     height: 100%;
     margin-top: 120px;
     margin-bottom: 150px;
 }
 
-.services h2{
+.services h2 {
     text-align: center;
     color: var(--font);
     font-family: var(--font-3);
@@ -238,35 +248,35 @@ li a:hover{
     margin: 30px;
 }
 
-.servic{
+.servic {
     margin-top: 60px;
     position: relative;
 }
 
-.servimg{
+.servimg {
     display: grid;
     place-content: center;
 }
 
-.servic img{
+.servic img {
     width: 200px;
 }
 
-.servic i{
+.servic i {
     display: flex;
     justify-content: center;
     font-size: 100px;
     align-items: center;
 }
 
-.servic h3{
+.servic h3 {
     color: var(--font);
     font-size: var(--step-0);
     text-align: center;
     font-family: var(--font-1);
 }
 
-.servic p{
+.servic p {
     font-family: var(--font-1);
     color: var(--font);
     margin-top: 20px;
@@ -278,11 +288,11 @@ li a:hover{
 
 
 /* 4th section */
-.contact{
+.contact {
     height: 30vh;
 }
 
-.contact h1{
+.contact h1 {
     font-family: var(--font-3);
     text-align: center;
     font-size: var(--step-4);
@@ -291,7 +301,7 @@ li a:hover{
     text-underline-offset: 8px;
 }
 
-.options{
+.options {
     display: flex;
     justify-content: space-evenly;
     font-size: var(--step--1);
@@ -301,21 +311,21 @@ li a:hover{
     gap: 3em;
 }
 
-.options h2{
+.options h2 {
     color: var(--font);
     font-family: var(--font-1);
     font-size: var(--step-0);
     margin-bottom: 15px;
 }
 
-.options{
+.options {
     font-size: var(--step--1);
     color: rgb(228, 222, 212);
     font-family: var(--font-3);
 }
 
 .email a,
-.phone a{
+.phone a {
     color: var(--font);
 }
 
@@ -327,17 +337,18 @@ li a:hover{
 
 
 
-@keyframes carousel{
-    0%{
+@keyframes carousel {
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
 @keyframes hover {
-    50%{
+    50% {
         transform: translateY(-25px);
     }
 }
@@ -346,86 +357,101 @@ li a:hover{
 
 
 @media screen and (max-width: 414px) {
-    nav ul{
+    nav ul {
         display: none;
     }
 }
 
 @media screen and (min-width: 768.5px) {
+
     /* nav ul{
         display: none;
     } */
-    .mobileimg{
+    .mobileimg {
         display: none;
     }
-    .servicitems{
+
+    .servicitems {
         display: flex;
     }
 }
 
 @media screen and (max-width: 768px) {
-    nav ul{
+    nav ul {
         display: none;
     }
-    .heroimg{
+
+    .heroimg {
         display: none;
     }
-    nav{
+
+    nav {
         padding: 30px 2% 20px 5%;
     }
-    .hero{
+
+    .hero {
         padding: 0px 2% 20px 2%;
         height: 100%;
     }
-    .herotext{
+
+    .herotext {
         display: grid;
         place-content: center;
         margin-top: 50px;
     }
-    .herotext h1{
+
+    .herotext h1 {
         display: flex;
         justify-content: center;
         align-items: center;
         line-height: 50px;
     }
-    .herodesc{
+
+    .herodesc {
         width: min(100% - 5rem, var(--container-max));
     }
-    .mobileimg{
+
+    .mobileimg {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .mobileimg img{
+
+    .mobileimg img {
         margin-left: 0px;
         margin-top: 20px;
     }
-    .herocomp{
+
+    .herocomp {
         --min: 10ch;
         --gap: 1rem;
-      
+
         display: grid;
         grid-gap: var(--gap);
         /* min() with 100% prevents overflow
         in extra narrow spaces */
         grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
     }
-    .mobilebtn{
+
+    .mobilebtn {
         margin-top: 20px;
         display: flex;
         justify-content: center;
     }
-    .mobilebtn button{
+
+    .mobilebtn button {
         padding: 20px 40px;
     }
-    .herodesc{
+
+    .herodesc {
         padding: 1.5rem clamp(0rem, 7%, 3rem);
         text-align: center;
         font-size: var(--step--0);
         color: var(--font);
         font-family: var(--font-2)
     }
-    .herotext h1:nth-child(3){
+
+    .herotext h1:nth-child(3) {
         display: none;
     }
 }
