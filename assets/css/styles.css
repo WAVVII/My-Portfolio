@@ -222,8 +222,8 @@ li a:hover {
 }
 
 :root {
-  --color-text: navy;
-  --color-bg: papayawhip;
+  --color-text: papayawhip;
+  --color-bg: navy;
   --color-bg-accent: var(--color);
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
