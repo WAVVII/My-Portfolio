@@ -42,6 +42,7 @@
 
 #body {
   background: var(--color);
+  -webkit-tap-highlight-color: transparent;
 }
 
 nav {
