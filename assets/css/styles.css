@@ -47,10 +47,10 @@
   --font-3: "JetBrains Mono", monospace;
 }
 
-body::-webkit-scrollbar{
-    display: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #body {
@@ -115,12 +115,12 @@ li a:hover {
   color: #cdcdcd;
 }
 
-.menu svg{
-    width: 25px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    fill: var(--font);
+.menu svg {
+  width: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  fill: var(--font);
 }
 
 .body {
@@ -216,17 +216,17 @@ li a:hover {
 }
 
 /* section 2 */
-.marq{
-    height: 40vh;
-    margin-top: 130px;
+.marq {
+  height: 40vh;
+  margin-top: 130px;
 }
 
-.marqtext{
-    text-align: center;
-    margin-bottom: 70px;
-    font-size: var(--step-2);
-    font-family: var(--font-3);
-    color: var(--font);
+.marqtext {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: var(--step-2);
+  font-family: var(--font-3);
+  color: var(--font);
 }
 
 :root {
@@ -235,7 +235,7 @@ li a:hover {
   --color-bg-accent: var(--color);
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
-  --duration: 60s;
+  --duration: 20s;
   --scroll-start: 0;
   --scroll-end: calc(-100% - var(--gap));
 }
@@ -436,19 +436,19 @@ li a:hover {
   .mobileimg {
     display: none;
   }
-  .services{
+  .services {
     margin-top: 120px;
   }
-  .marq{
+  .marq {
     margin-bottom: 30vh;
   }
   .servicitems {
     display: flex;
   }
-  .servicmobile{
+  .servicmobile {
     display: none;
   }
-  .menu{
+  .menu {
     display: none;
   }
 }
@@ -532,10 +532,10 @@ li a:hover {
     display: none;
   }
 
-  .marq{
+  .marq {
     margin-top: 130px;
   }
-  .servicpc{
+  .servicpc {
     display: none;
   }
 }
