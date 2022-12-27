@@ -302,7 +302,8 @@ li a:hover{
     font-family: var(--font-3);
 }
 
-.email a{
+.email a,
+.phone a{
     color: var(--font);
 }
 
