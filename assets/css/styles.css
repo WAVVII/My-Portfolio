@@ -367,7 +367,8 @@ li a:hover {
 
 /* 4th section */
 .contact {
-  height: 30vh;
+  height: 100%;
+  padding: 0 0 10ch 0;
 }
 
 .contact h1 {
