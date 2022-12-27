@@ -115,6 +115,14 @@ li a:hover {
   color: #cdcdcd;
 }
 
+.menu svg{
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    fill: var(--font);
+}
+
 .body {
   height: 100%;
 }
@@ -438,6 +446,9 @@ li a:hover {
     display: flex;
   }
   .servicmobile{
+    display: none;
+  }
+  .menu{
     display: none;
   }
 }
