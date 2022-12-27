@@ -130,7 +130,7 @@ li a:hover{
 
 .herotext h1 {
   display: flex;
-  line-height: 44px;
+  line-height: 60px;
   letter-spacing: 1px;
   font-family: var(--font-3);
   font-size: var(--step-5);
@@ -189,7 +189,7 @@ li a:hover{
 
 
 /* section 2 */
-.integrate{
+/* .integrate{
     height: 20vh;
 }
 
@@ -219,13 +219,15 @@ li a:hover{
 
 .carousel p{
     transition: carousel 500ms linear infinite;
-}
+} */
 
 
 /* section 3 */
 
 .services{
-    height: 80vh;
+    height: 100%;
+    margin-top: 120px;
+    margin-bottom: 150px;
 }
 
 .services h2{
@@ -238,6 +240,16 @@ li a:hover{
 
 .servic{
     margin-top: 60px;
+    position: relative;
+}
+
+.servimg{
+    display: grid;
+    place-content: center;
+}
+
+.servic img{
+    width: 200px;
 }
 
 .servic i{
@@ -257,7 +269,7 @@ li a:hover{
 .servic p{
     font-family: var(--font-1);
     color: var(--font);
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     padding: 0.5rem clamp(0.5rem, 20%, 9rem);
 
@@ -345,6 +357,9 @@ li a:hover{
     } */
     .mobileimg{
         display: none;
+    }
+    .servicitems{
+        display: flex;
     }
 }
 
