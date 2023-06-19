@@ -194,6 +194,7 @@ li a:hover {
 
 .mobilebtn button:nth-child(2) {
   background-color: transparent;
+  color: var(--font);
 }
 
 .cntbtn {
